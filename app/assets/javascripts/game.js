@@ -30,20 +30,30 @@ alert("The blanks for the word generated: " + blanks() );
 
 // Check the guess to see if it matches any of the letters from the random word
 var check = function () {
-  var positions = [];
-  for (var i=0; i <= rand.length; i++){
-    if (guess===rand.charAt(i)){
-      positions.push(i);
-      console.log(positions);
-      hidden_word[i] = rand[i];
+  var exist = false;
+  for (var i = 0; i < rand.length; i++){
+    if (guess === rand[i]){
+      exist = true;
+      hidden_word[i] = guess;
     }
   }
-
+  return exist;
 }
+
+// Life counter
+var lives = 6;
+
+
 while (hidden_word.indexOf("_") !== -1){
   // Prompt user for letter
-  var guess = prompt("guess a letter");
+  var guess = prompt("Guess a letter.");
   console.log(guess);
-  check(guess);
-  console.log(hidden_word)
+  if (!check(guess)) {
+    lives = lives - 1;
+    alert("This is not a valid letter. You have " + lives + " left.");
+      if (lives === 0) {
+      alert("Game over!");
+    }
+  }
+  console.log(hidden_word);
 }
