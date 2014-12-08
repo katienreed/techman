@@ -47,12 +47,3 @@ while (hidden_word.indexOf("_") !== -1){
   check(guess);
   console.log(hidden_word)
 }
-
-//
-
-
-// var player_name = prompt("What is your name?");
-
-// console.log("Welcome to Techman, " + player_name);
-
-// console.log("The blanks for the word generated: " + blank_word);
