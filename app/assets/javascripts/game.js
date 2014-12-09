@@ -1,13 +1,13 @@
+$(function(){
 // Creates an array for the available words to be pulled from the wordbank
-var words = ["technology", "bitcoin", "computer"];
+var words = ["TECHNOLOGY", "BITCOIN", "COMPUTER"];
 
 // Grabs a random word from the wordbank
 var rand = words[Math.floor(Math.random() * words.length)];
 console.log(rand)
 
 // Creates an array for the alphabet inputs
-alpha_key = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
-"m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+used_letters = [];
 
 // Assigns a value from the alphabet to coordinate with the random word
 var rand_key = rand.split("");
@@ -27,10 +27,10 @@ console.log(hidden_word);
 // Tells the user in a prompt how many blanks are in the word
 alert("The blanks for the word generated: " + blanks() );
 
-
 // Check the guess to see if it matches any of the letters from the random word
-var check = function () {
+var check = function (guess) {
   var exist = false;
+  console.log(rand);
   for (var i = 0; i < rand.length; i++){
     if (guess === rand[i]){
       exist = true;
@@ -40,20 +40,43 @@ var check = function () {
   return exist;
 }
 
+// Checks the guess to see if it has already been used before
+var used = function(guess) {
+
+  if (used_letters.indexOf(guess) !== -1){
+    alert("This guess has been used before.  Guess again.");
+  }else {
+    used_letters.push(guess)
+  }
+}
+
+
 // Life counter
 var lives = 6;
 
+//
 
-while (hidden_word.indexOf("_") !== -1){
-  // Prompt user for letter
-  var guess = prompt("Guess a letter.");
-  console.log(guess);
-  if (!check(guess)) {
-    lives = lives - 1;
-    alert("This is not a valid letter. You have " + lives + " left.");
+var turn = function(guess){
+  console.log("start of turn");
+  if (hidden_word.indexOf("_") !== -1) {
+    // Prompt user for letter
+    used(guess);
+    console.log(guess);
+    console.log("guess checking");
+    if (!check(guess)) {
+      console.log("wrong guess");
+      lives = lives - 1;
+      alert("This is not a valid letter. You have " + lives + " left.");
       if (lives === 0) {
-      alert("Game over!");
+        alert("Game over!");
+      }
     }
+    console.log(hidden_word);
   }
-  console.log(hidden_word);
 }
+
+$("span").on("click", function(){
+  turn($(this).text());
+})
+//
+})
