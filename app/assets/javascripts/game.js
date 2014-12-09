@@ -80,3 +80,9 @@ $("span").on("click", function(){
 })
 //
 })
+
+
+// This selects the noose and animates it's entrance on the homepage
+$(document).ready(function () {
+  $("#noose").animate({ "bottom": "-190px" }, "slow" );
+});
