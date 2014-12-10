@@ -1,0 +1,48 @@
+body {
+  background: url("/assets/screen.png") center top 0px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 90px;
+  font-family: Sabo;
+}
+#container {
+  margin: 0 auto;
+  width: 810px;
+  position: relative;
+}
+h2 {
+  font-size: 45px;
+  font-family: Courier;
+  color: #4CBB17;
+}
+#noose {
+  position: absolute;
+  float: right;
+  z-index: -1;
+  top: -220px;
+}
+.btn {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  -webkit-box-shadow: 5px 6px 4px #666666;
+  -moz-box-shadow: 5px 6px 4px #666666;
+  box-shadow: 5px 6px 4px #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 27px;
+  background: #4CBB17;
+  padding: 15px 30px 15px 30px;
+  border: solid #4aa81b 5px;
+  text-decoration: none;
+  position: relative;
+  left: 60px;
+  top: 50px;
+}
+
+.btn:hover {
+  background: #4aa81b;
+  text-decoration: none;
+}
