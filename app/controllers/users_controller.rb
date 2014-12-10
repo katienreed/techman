@@ -13,4 +13,10 @@ class UserController < ApplicationController
   			flash[:alert] = @user.errors.full_messages
   			redirect_to "/users/new"
   end
+
+  private
+
+  def user_params
+    params.require(:user).permit(:email,:password)
+  end
 end
