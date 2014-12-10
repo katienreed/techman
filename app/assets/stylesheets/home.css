@@ -1,16 +1,21 @@
-body {
-  background: url("/assets/screen.png") center top 0px;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-}
 h1 {
   font-size: 90px;
   font-family: Sabo;
+  margin: 0px;
 }
-#container {
+.container {
+  background: url("/assets/screen.png") center top 0px;
+  background-repeat: no-repeat;
   margin: 0 auto;
-  width: 810px;
+  width: 920px;
+  height: 800px;
   position: relative;
+  top: 0px;
+}
+#content{
+  position: relative;
+  top: 70px;
+  left: 50px;
 }
 h2 {
   font-size: 45px;
@@ -18,10 +23,12 @@ h2 {
   color: #4CBB17;
 }
 #noose {
-  position: absolute;
+  position: relative;
   float: right;
-  z-index: -1;
-  top: -220px;
+  z-index: 2;
+  right: 100px;
+  top:-113px;
+  left: -150px;
 }
 .btn {
   -webkit-border-radius: 60;
@@ -41,7 +48,6 @@ h2 {
   left: 60px;
   top: 50px;
 }
-
 .btn:hover {
   background: #4aa81b;
   text-decoration: none;

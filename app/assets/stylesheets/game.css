@@ -6,24 +6,89 @@
   font-size: 70px;
   font-family: Courier;
 }
-
-#gamepage .container {
+#gamepage #container {
+  background: url("/assets/screen.png") center top 0px;
+  background-repeat: no-repeat;
   margin: 0 auto;
-  width: 810px;
+  width: 920px;
+  height: 800px;
   position: relative;
-  top: 100px;
+  top: 0px;
 }
 #gamepage h2 {
   font-size: 35px;
   font-family: Courier;
   color: green;
 }
-#gamepage .alphabet {
+#alphabet {
+  position: relative;
+  top: 368px;
+  right: 41px;
   border: 4px solid #4CBB17;
   width: 350px;
   font-size: 40px;
-  font-family: Courier;
+  font-family: sabo;
   padding: 10px;
   float: right;
   text-align: center;
+}
+#gamepage img{
+  height: 100%;
+  width: 100%;
+}
+#gamepage #hangman{
+  top: 100px;
+  left: 45px;
+  float: left;
+  position: relative;
+  height: 450px;
+  width: 450px;
+}
+#hangman div{
+  position: absolute;
+}
+#hangmanpost{
+  height: 450px;
+  width: 450px;
+  z-index: 0
+}
+#hangmanhead{
+  height:50px;
+  width: 80px;
+  top: 113px;
+  left: 240px;
+  z-index: 1
+}
+#hangmanbody{
+  height: 100px;
+  width: 90px;
+  left: 235px;
+  top:160px;
+  z-index: 1;
+}
+#hangmanarm1{
+  height: 75px;
+  width: 40px;
+  left: 197px;
+  top: 175px;
+  z-index: 1;
+}
+#hangmanarm2{
+  height: 80px;
+  width: 50px;
+  left: 325px;
+  top: 175px;
+  z-index: 1;
+}
+#hangmanleg1{
+  height: 90px;
+  width: 70px;
+  left: 190px;
+  top: 247px;
+}
+#hangmanleg2{
+  height: 90px;
+  width: 70px;
+  left: 300px;
+  top: 247px;
 }
