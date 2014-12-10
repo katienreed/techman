@@ -8,7 +8,7 @@ class UserController < ApplicationController
   		if @user.save
   			session[:user_id] = @user.user_id
   			flash[:notice] = "You have signed up to Techman"
-  			redirect_to "/profile/#{@user.id}"
+  			redirect_to "/profile/"
   		else
   			flash[:alert] = @user.errors.full_messages
   			redirect_to "/users/new"
