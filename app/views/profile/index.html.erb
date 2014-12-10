@@ -2,11 +2,11 @@
   <div id="container">
     <div class="leftwrapper">
       <h1>Techman</h1>
-      <img class="profpic" src="http://www.pinballnirvana.com/forums/attachment.php?attachmentid=5853&d=1368619927">
+      <%= image_tag @user.avatar.url %>
       <h3>
         "Welcome, " + <% @current_user %>
         <br>
-        Your score: @Score
+        "Your score: " + <% @Score %>
       </h3>
       <button class="btn">Play Now</button>
     </div>
