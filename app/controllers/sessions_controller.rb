@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-  	@user = User.where(email: params[:email]).first
+  	@user = User.where(username: params[:username]).first
 
   	if @user && @user.password == params[:password]
   		session[:user_id] = @user.id
@@ -11,7 +11,8 @@ class SessionsController < ApplicationController
   		redirect_to "/profile/"
   	else
   		flash[:alert] = "Wrong info"
-  		redirect_to "/sessions/new"
+  		redirect_to "/"
+  	end
   end
 
   def destroy
@@ -22,6 +23,6 @@ class SessionsController < ApplicationController
   private
 
   def sessions_params
-  	params.require(:user).permit(:email,:password)
+  	params.require(:user).permit(:username,:password)
   end
 end

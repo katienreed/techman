@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
 
-  get 'sessions/create'
-
-  get 'sessions/destroy'
+  resources :sessions, only: [:new,:create,:destroy]
 
   root 'home#index'
-  resources :users, only: [:create, :new]
+
+  resources :users, only: [:create]
 
   get 'profile/index'
 

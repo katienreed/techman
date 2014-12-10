@@ -1,5 +1,5 @@
 <div class="container">
-  <div id="content">
+  <div class="content">
     <h1>Techman</h1>
     <button class="btn"><a href="#openModal">Sign In</a></button>
     <button class="btn"><a href="#openModal2">Sign Up</a></button>
@@ -7,13 +7,13 @@
         <div>
           <a href="#close" title="Close" class="close">X</a>
           <h1>Sign In</h1>
-          <form>
-            <input type="text" name="username" placeholder="Username" class="username_login">
-            <br><br>
-            <input type="text" name="password" placeholder="Password" class="password_login">
-            <br><br><br><br>
-            <input type="submit" value="Log In" class="submit"></fieldset>
-          </form>
+          <%= form_tag('/sessions', method: "POST") do %>
+            <%= text_field_tag :username,"", :class => "username_login" %>
+            <br>
+            <%= password_field_tag :password,"", :class => "password_login" %>
+            <br>
+            <%= submit_tag "Log in", :class => "submit" %>
+          <% end %>
         </div>
     </div>
     <div id="openModal2" class="modalDialog2">
@@ -21,19 +21,14 @@
         <a href="#close" title="Close" class="close">X</a>
         <h1>Sign Up</h1>
           <%= form_for @user do |f| %>
-          <%= f.text_field :username %>
-          <%= f.password_field :password %>
-          <%= f.submit "Create An Account" %>
+          <%= f.text_field :username , :class => "username_login"%>
+          <br>
+          <%= f.password_field :password , :class => "password_login" %>
+          <br>
+          <%= f.submit "Create An Account", :class => "submit" %>
           <% end %>
         <form>
-          <input type="text" name="username" placeholder="Username" class="username_login">
-          <br><br>
-          <input type="text" name="password" placeholder="Password" class="password_login">
-          <br><br>
           Prof pic here
-          <br><br>
-          <input type="submit" value="Create An Account" class="submit"></fieldset>
-        </form>
       </div>
     </div>
     <img id="noose" src="/assets/noose.png">

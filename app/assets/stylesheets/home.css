@@ -12,7 +12,7 @@ h1 {
   position: relative;
   top: 0px;
 }
-#content{
+.content{
   position: relative;
   top: 70px;
   left: 50px;
