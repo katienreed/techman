@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Techman</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+<main id="profilepage">
   <div id="container">
     <div class="leftwrapper">
       <h1>Techman</h1>
       <img class="profpic" src="http://www.pinballnirvana.com/forums/attachment.php?attachmentid=5853&d=1368619927">
       <h3>
-        Welcome, @User
+        "Welcome, " + <% @current_user %>
         <br>
         Your score: @Score
       </h3>
@@ -23,5 +16,4 @@
       @ProfilePic @ Points
     </div>
   </div>
-</body>
-</html>
+</main>

@@ -1,24 +1,24 @@
-body {
+#gamepage body {
   background: #ffffff url("screen.png") no-repeat center top 0px;
   margin: 0 auto;
 }
-h1 {
+#gamepage h1 {
   font-size: 70px;
   font-family: Courier;
 }
-#container {
+#gamepage #container {
   margin: 0 auto;
   width: 810px;
   position: center;
 }
-h2 {
+#gamepage h2 {
   font-size: 35px;
   font-family: Courier;
   color: green;
 }
-ul {
+#gamepage ul {
 
 }
-li {
+#gamepage li {
 
 }

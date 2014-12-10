@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+@font-face {
+  font-family: sabo;
+  src: url(Sabo-Regular.otf);
+}
+html{
+	font-family: sabo;
+}

@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
+  root 'home#index'
+
+  get 'user/new'
+
+  get 'user/create'
+
   get 'profile/index'
 
-  get 'home/index'
-
-  get "/game"=>"game#index"
-
-  get "/home"=>"home#index"
+  get "/game"=>"home#game"
 
   get "/profile"=>"profile#index"
 end
