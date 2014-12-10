@@ -45,8 +45,10 @@ var used = function(guess) {
 
   if (used_letters.indexOf(guess) !== -1){
     alert("This guess has been used before.  Guess again.");
+    return true
   }else {
     used_letters.push(guess)
+    return false
   }
 }
 
@@ -60,10 +62,9 @@ var turn = function(guess){
   console.log("start of turn");
   if (hidden_word.indexOf("_") !== -1) {
     // Prompt user for letter
-    used(guess);
     console.log(guess);
     console.log("guess checking");
-    if (!check(guess)) {
+    if (!check(guess) && !used(guess)) {
       console.log("wrong guess");
       lives = lives - 1;
       alert("This is not a valid letter. You have " + lives + " left.");
