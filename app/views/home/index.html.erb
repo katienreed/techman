@@ -20,12 +20,17 @@
       <div>
         <a href="#close" title="Close" class="close">X</a>
         <h1>Sign Up</h1>
+          <%= form_for @user do |f| %>
+          <%= f.text_field :username %>
+          <%= f.password_field :password %>
+          <%= f.submit "Create An Account" %>
+          <% end %>
         <form>
           <input type="text" name="username" placeholder="Username" class="username_login">
           <br><br>
           <input type="text" name="password" placeholder="Password" class="password_login">
           <br><br>
-          Insert photo here
+          Prof pic here
           <br><br>
           <input type="submit" value="Create An Account" class="submit"></fieldset>
         </form>

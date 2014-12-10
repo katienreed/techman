@@ -12,6 +12,7 @@ class UserController < ApplicationController
   		else
   			flash[:alert] = @user.errors.full_messages
   			redirect_to "/users/new"
+      end
   end
 
   private

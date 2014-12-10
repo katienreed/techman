@@ -6,10 +6,7 @@ Rails.application.routes.draw do
   get 'sessions/destroy'
 
   root 'home#index'
-
-  get 'user/new'
-
-  get 'user/create'
+  resources :users, only: [:create, :new]
 
   get 'profile/index'
 
