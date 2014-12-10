@@ -2,7 +2,7 @@
   <div id="container">
     <div class="leftwrapper">
       <h1>Techman</h1>
-      <%= image_tag @user.avatar.url %>
+      <%= image_tag @user.avatar.url(:medium) %>
       <h3>
         "Welcome, " + <% @current_user %>
         <br>

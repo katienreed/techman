@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
   root 'home#index'
-
-  get 'user/new'
-
-  get 'user/create'
+  resources :users, only: [:create, :new]
 
   get 'profile/index'
 
