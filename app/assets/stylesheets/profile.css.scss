@@ -4,24 +4,60 @@ body {
   margin: 0 auto;
 }
 h1 {
-  font-size: 90px;
+  font-size: 60px;
   font-family: Sabo;
+}
+h4 {
+  font-size: 50px;
+  font-family: Sabo;
+  color: #4CBB17;
+  text-align: center;
+  position: relative;
+  bottom: 65px;
 }
 #container {
   margin: 0 auto;
+  top: 20px;
   width: 810px;
   position: relative;
 }
+.leftwrapper {
+  margin: 0 auto;
+  width: 310px;
+  float: left;
+}
+.rightwrapper {
+  margin: 0 auto;
+  width: 400px;
+  float: right;
+  background-color:rgba(0, 0, 0, 0.5);
+  height: 560px;
+  position: relative;
+  top: 45px;
+  right: 20px;
+}
 h2 {
   font-size: 45px;
+  font-family: Sabo;
+  color: #000;
+}
+h3 {
+  font-size: 20px;
   font-family: Courier;
+  text-align: center;
+}
+.name {
   color: #4CBB17;
 }
-#noose {
-  position: absolute;
-  float: right;
-  z-index: -1;
-  top: -220px;
+.profpic {
+  width: 200px;
+  height: 200px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  position: relative;
+  left: 55px;
+  top: -30px;
 }
 .btn {
   -webkit-border-radius: 60;
@@ -38,11 +74,14 @@ h2 {
   border: solid #4aa81b 5px;
   text-decoration: none;
   position: relative;
-  left: 60px;
-  top: 50px;
+  top: 0;
 }
 
 .btn:hover {
   background: #4aa81b;
   text-decoration: none;
+}
+h5 {
+  font-size: 30px;
+  font-family: Courier;
 }
