@@ -105,7 +105,6 @@
 #word{
   font-family: "courier new";
   position: absolute;
-  background: blue;
   height: 50px;
   width: 520px;
   top: 165px;
@@ -139,4 +138,7 @@
 }
 #gamepage a {
   color: #4CBB17;
+}
+.hidden{
+  display: none;
 }

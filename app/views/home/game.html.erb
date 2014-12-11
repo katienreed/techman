@@ -3,7 +3,7 @@
     <nav>
       <ul>
         <li>Techman</li>
-        <li>Good luck, @User</li>
+        <li>Good luck, <%= @current_user.username %></li>
       </ul>
     </nav>
     <div id="word">   
@@ -40,22 +40,22 @@
       <div id="hangmanpost" >
         <img src="assets/hangman.png">
       </div>
-      <div id="hangmanhead" >
+      <div id="hangmanhead" class="hidden">
         <img src="assets/head.png">
       </div>
-      <div id="hangmanbody" >
+      <div id="hangmanbody" class="hidden">
         <img src="assets/body.png">
       </div>
-      <div id="hangmanarm1" >
+      <div id="hangmanarm1" class="hidden">
         <img src="assets/arm1.png">
       </div>
-      <div id="hangmanarm2" >
+      <div id="hangmanarm2" class="hidden">
         <img src="assets/arm2.png">
       </div>
-      <div id="hangmanleg1" >
+      <div id="hangmanleg1" class="hidden">
         <img src="assets/leg1.png">
       </div>
-      <div id="hangmanleg2" >
+      <div id="hangmanleg2" class="hidden">
         <img src="assets/leg2.png">
       </div>
     </div>

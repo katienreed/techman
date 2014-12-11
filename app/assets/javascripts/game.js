@@ -63,7 +63,6 @@ var used = function(guess) {
 
 // Life counter
 var lives = 6;
-
 //
 
 var turn = function(guess){
@@ -75,6 +74,26 @@ var turn = function(guess){
     if (!check(guess) && !used(guess)) {
       console.log("wrong guess");
       lives = lives - 1;
+      switch (lives) {
+        case 0:
+            $("#hangmanleg2").removeClass("hidden");
+            break;
+        case 1:
+            $("#hangmanleg1").removeClass("hidden");
+            break;
+        case 2:
+            $("#hangmanarm2").removeClass("hidden");
+            break;
+        case 3:
+            $("#hangmanarm1").removeClass("hidden");
+            break;
+        case 4:
+            $("#hangmanbody").removeClass("hidden");
+            break;
+        case 5:
+            $("#hangmanhead").removeClass("hidden");
+            break;
+      }
       alert("This is not a valid letter. You have " + lives + " left.");
       if (lives === 0) {
         alert("Game over!");
