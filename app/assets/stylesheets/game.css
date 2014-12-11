@@ -22,7 +22,7 @@
 }
 #alphabet {
   position: relative;
-  top: 368px;
+  top: 318px;
   right: 41px;
   border: 4px solid #4CBB17;
   width: 350px;
@@ -31,6 +31,7 @@
   padding: 10px;
   float: right;
   text-align: center;
+  font-family: "courier new";
 }
 #gamepage img{
   height: 100%;
@@ -91,4 +92,15 @@
   width: 70px;
   left: 300px;
   top: 247px;
+}
+#word{
+  font-family: "courier new";
+  position: absolute;
+  background: blue;
+  height: 50px;
+  width: 520px;
+  top: 165px;
+  right: 40px;
+  font-size: 35px;
+  text-align: center;
 }

@@ -22,7 +22,7 @@ var blanks = function () {
   return(blank_word.split(""));
 };
 var hidden_word = blanks();
-console.log(hidden_word);
+$("#word").html(hidden_word.join(" "));
 
 // Tells the user in a prompt how many blanks are in the word
 alert("The blanks for the word generated: " + blanks() );
@@ -35,6 +35,7 @@ var check = function (guess) {
     if (guess === rand[i]){
       exist = true;
       hidden_word[i] = guess;
+      $("#word").html(hidden_word.join(" "));
     }
   }
   return exist;
