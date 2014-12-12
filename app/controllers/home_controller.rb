@@ -22,6 +22,9 @@ class HomeController < ApplicationController
   end
   def lose
     @current_user = User.find(session[:user_id])
+    if @current_user.wins === nil
+      @current_user.wins = 0
+    end
     if @current_user.games === nil
       @current_user.games = 1
     else

@@ -4,7 +4,7 @@ class ProfileController < ApplicationController
   	if @current_user.games === nil
   		@score = 0
   	else
-  	@score = @current_user.games / @current_user.wins
+  	@score = @current_user.wins * 10
   	end
 	end
 end
