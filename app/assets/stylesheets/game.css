@@ -28,7 +28,7 @@
 #alphabet {
   position: relative;
   top: 318px;
-  right: 41px;
+  right: 60px;
   border: 4px solid #4CBB17;
   width: 350px;
   font-size: 40px;
@@ -176,6 +176,7 @@
   background: -webkit-linear-gradient(#fff, #999);
   background: -o-linear-gradient(#fff, #999);
 }
+
 #gameovertext{
   position: absolute;
   top: 150px;

@@ -70,7 +70,6 @@
     }
 
     //
-
     var turn = function(guess){
       console.log("start of turn");
       if (hidden_word.indexOf("_") !== -1) {
@@ -109,6 +108,7 @@
           }
         }
         console.log(hidden_word);
+        alert("Game over!");
       }
     }
 
