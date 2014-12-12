@@ -132,7 +132,7 @@
   margin: 0;
   padding: 0;
 }
-#gamepage a:hover {
+#gamepage #alphabet a:hover {
   border: 2px solid white;
   color: #fff;
 }
@@ -161,7 +161,6 @@
   background: rgba(0,0,0,0.8);
   z-index: 99999;
   opacity:1;
-  pointer-events: none;
   text-align: center;
 }
 .modalDialog3 > div {
@@ -199,6 +198,31 @@
   position: relative;
   left: 5px;
   top: 50px;
+}
+.modalDialog4 {
+  position: fixed;
+  font-family: Courier;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:1;
+  pointer-events: none;
+  text-align: center;
+}
+.modalDialog4 > div {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
 }
 #wintext{
   position: absolute;

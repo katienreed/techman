@@ -43,14 +43,16 @@
     var check = function (guess) {
       var exist = false;
       console.log(rand);
-      console.log(hidden_word);
+      console.log(hidden_word.join(""));
+      console.log(rand)
       for (var i = 0; i < rand.length; i++){
         if (guess === rand[i]){
           exist = true;
           hidden_word[i] = guess;
-          if(hidden_word === rand_key){
-            $("#win").removeClass("hidden");
-          }
+          if (hidden_word.join("") === rand) {
+            console.log("howdy")
+            $("#openModal4").removeClass("hidden");
+          };
           $("#word").html(hidden_word.join(" "));
         }
       }
@@ -73,9 +75,6 @@
     var turn = function(guess){
       console.log("start of turn");
       if (hidden_word.indexOf("_") !== -1) {
-        // Prompt user for letter
-        console.log(guess);
-        console.log("guess checking");
         if (!check(guess) && !used(guess)) {
           console.log("wrong guess");
           lives = lives - 1;
@@ -104,11 +103,8 @@
           if (lives === 0) {
             console.log($("#gameOver"));
             $("#openModal3").removeClass("hidden")
-          //   alert("Game over!");
-          }
+          };
         }
-        console.log(hidden_word);
-        alert("Game over!");
       }
     }
 

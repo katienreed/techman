@@ -6,7 +6,9 @@ Rails.application.routes.draw do
 
   resources :users, only: [:create]
 
-  get '/win' => "home#win"
+  get "/win" => "home#win"
+
+  get "/lose" => "home#lose"
 
   get "/game"=>"home#game"
 
