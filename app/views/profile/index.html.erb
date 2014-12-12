@@ -19,8 +19,7 @@
       <div class="rightwrapper">
         <h4>Scoreboard</h4>
         <div class="scoreboard">
-          <h5>Top Score: @User</h5>
-          @ProfilePic @ Points
+          <%= User.find(:all, :limit => 3, :order => 'wins') =>
         </div>
       </div>
     </div>
