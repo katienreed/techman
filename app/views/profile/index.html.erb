@@ -11,7 +11,7 @@
           Welcome, <%= @current_user.username %>
           <br>
           <br>
-          <%= image_tag @user.avatar.url(:medium) %>
+          <%= image_tag @current_user.avatar.url(:medium) %>
           <br><br>
           Your score: <%= @score %>
         </h3>
