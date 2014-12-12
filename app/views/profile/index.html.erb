@@ -19,7 +19,9 @@
       <div class="rightwrapper">
         <h4>Scoreboard</h4>
         <div class="scoreboard">
-          <%= User.find(:all, :limit => 3, :order => 'wins') =>
+          <%= User.order('wins DESC, :username').first(3).each do ||%>
+          
+          <% end %>
         </div>
       </div>
     </div>
