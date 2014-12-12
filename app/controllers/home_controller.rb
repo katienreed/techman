@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   	@user = User.new
   end
   def game
-  	@current_user = User.find(session[:user_id])  	
+  	@current_user = User.find(session[:user_id])
   end
   def win
   	@current_user = User.find(session[:user_id])
@@ -28,7 +28,7 @@ class HomeController < ApplicationController
     if @current_user.games === nil
       @current_user.games = 1
     else
-      @current_user.games = @current_user.games + 1  
+      @current_user.games = @current_user.games + 1
     end
     @current_user.save
     redirect_to "/profile"

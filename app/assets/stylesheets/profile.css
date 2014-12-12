@@ -34,8 +34,10 @@
   background-color:rgba(0, 0, 0, 0.4);
   height: 492px;
   position: relative;
-  top: -40px;
+  top: -45px;
   right: 130px;
+  border: solid 4px #4CBB17;
+  box-shadow: 10px 10px 5px #888888;
 }
 #profilepage h2 {
   font-size: 45px;

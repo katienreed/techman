@@ -11,7 +11,7 @@
     "NESTING", "PERMALINK", "PROPERTY", "PSUEDO", "SCHEMA", "SCRIPT", "SELECTOR", "SEMANTICS", "SERVER", "CLIENT", "TAG",
     "TEMPLATE", "VALID", "ATTRIBUTES", "ARRAY", "CASCADE", "HTML5", "FLOAT", "FUNCTION", "FRAMES", "GLOBAL", "LOCAL",
     "JAVA", "LOCAL", "RUBY", "MYSQL", "MARGIN", "OPERATORS", "PADDING", "PLUGIN", "SCOPE", "STRING", "TYPOGRAPHY", "TEMPLATE",
-    "VALUE", "VARIABLE", "WIREFRAME", "ROUTES", "CONTROLLERS", "ASSETS", "SEO", "JQUERY"];
+    "VALUE", "VARIABLE", "WIREFRAME", "ROUTES", "CONTROLLERS", "ASSETS", "SEO", "JQUERY", "BOOLEAN",];
 
     // Grabs a random word from the wordbank
     var rand = words[Math.floor(Math.random() * words.length)];
