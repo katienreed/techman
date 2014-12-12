@@ -26,6 +26,8 @@
   margin: 0 auto;
   width: 310px;
   float: left;
+  position: relative;
+  left: 22px;
 }
 #profilepage .rightwrapper {
   margin: 0 auto;
@@ -73,7 +75,7 @@
   color: #ffffff;
   font-size: 27px;
   background: #4CBB17;
-  padding: 15px 30px 15px 30px;
+  padding: 10px 20px 10px 20px;
   border: solid #4aa81b 5px;
   text-decoration: none;
   position: relative;
@@ -104,4 +106,9 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+.avatar {
+  border-radius: 1000px;
+  width: 250px;
+  height: 250px;
 }

@@ -9,9 +9,8 @@
       <div class="leftwrapper">
         <h3>
           Welcome, <%= @current_user.username %>
-          <br>
-          <br>
-          <%= image_tag @current_user.avatar.url(:medium) %>
+          <br><br>
+            <%= image_tag @current_user.avatar.url(:medium), :class => "avatar" %>
           <br><br>
           Your score: <%= @score %>
         </h3>
@@ -19,8 +18,9 @@
       </div>
       <div class="rightwrapper">
         <h4>Scoreboard</h4>
-        <h5>Top Score: @User</h5>
-        @ProfilePic @ Points
+        <div class="scoreboard">
+          <%= User.find(:all, :limit => 3, :order => 'wins') =>
+        </div>
       </div>
     </div>
   </div>
