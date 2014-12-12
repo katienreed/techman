@@ -77,6 +77,7 @@ var turn = function(guess){
       switch (lives) {
         case 0:
             $("#hangmanleg2").removeClass("hidden");
+            window.location.href = "#openModal3";
             break;
         case 1:
             $("#hangmanleg1").removeClass("hidden");
