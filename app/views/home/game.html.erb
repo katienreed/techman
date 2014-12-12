@@ -1,13 +1,33 @@
 <main id="gamepage">
   <div class="container">
+
     <nav>
       <ul>
         <li>Techman</li>
         <li>Good luck, <%= @current_user.username %></li>
       </ul>
     </nav>
+
     <div id="word">   
     </div>
+    <div id="openModal3" class="hidden modalDialog3">
+      <div>
+        <div id="gameovertext">
+          <h1>Game Over</h1>
+          <a href="/profile"><button class="returnbtn">Return To Profile</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="openModal3 win" class="hidden modalDialog3">
+      <div>
+        <div id="wintext">
+          <h1>Congrats, you get 10 points!</h1>
+          <a href="/win"><button class="returnbtn">Return To Profile</button></a>
+        </div>
+      </div>
+    </div>
+
     <div id="alphabet">
       <span id="A"><a href="#">A</span></a>
       <span id="B"><a href="#">B</span></a>
@@ -36,6 +56,10 @@
       <span id="Y"><a href="#">Y</span></a>
       <span id="Z"><a href="#">Z</span></a>
     </div>
+    <div id="lives">
+      <h1 id="numberoflives"></h1>
+    </div>
+
     <div id="hangman">
       <div id="hangmanpost" >
         <img src="assets/hangman.png">
@@ -61,3 +85,8 @@
     </div>
   </div>
 </main>
+<script>
+$(function(){
+  GAME.HANGMAN();
+})
+</script>
