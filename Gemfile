@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'pg'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
@@ -38,3 +40,7 @@ gem "paperclip", "~> 4.2"
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :production do
+	gem 'rails_12factor'
+end
