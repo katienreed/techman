@@ -19,8 +19,9 @@
       <div class="rightwrapper">
         <h4>Scoreboard</h4>
         <div class="scoreboard">
+          <br><br>
           <% @users.each do |user|%>
-            <%= "#{ user.username } #{ user.wins }" %> <%= image_tag user.avatar.url(:thumb), :class =>"miniavatar" %> <br>
+            <%= "#{ user.username } #{ user.wins * 10 }" %> <%= image_tag user.avatar.url(:thumb), :class =>"miniavatar" %> <br>
           <% end %>
         </div>
       </div>
