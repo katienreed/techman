@@ -14,13 +14,13 @@
           <br><br>
           Your score: <%= @score %>
         </h3>
-        <button class="btn" onclick="location.href='/game'">Play Now</button>
+        <button onclick="location.href='/game'" class="btn" >Play Now</button>
       </div>
       <div class="rightwrapper">
         <h4>Scoreboard</h4>
         <div class="scoreboard">
-          <%= User.order('wins DESC, :username').first(3).each do ||%>
-          
+          <% @users.each do |user|%>
+            <%= "#{ user.username } #{ user.wins }" %> <%= image_tag user.avatar.url(:thumb), :class =>"miniavatar" %> <br>
           <% end %>
         </div>
       </div>
