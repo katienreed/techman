@@ -1,0 +1,552 @@
+#gamepage body {
+  background: #ffffff url("screen.png") no-repeat center top 0px;
+  margin: 0 auto;
+}
+#gamepage h1 {
+  font-size: 70px;
+  font-family: Courier;
+}
+#gamepage #container {
+  background: url("/assets/screen.png") center top 0px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 920px;
+  height: 800px;
+  position: relative;
+  top: 0px;
+}
+#gamepage h2 {
+  font-size: 35px;
+  font-family: Courier;
+  color: green;
+}
+#gamepage h3 {
+  font-size: 35px;
+  font-family: Sabo;
+  color: green;
+}
+#alphabet {
+  position: relative;
+  top: 318px;
+  right: 60px;
+  border: 4px solid #4CBB17;
+  width: 350px;
+  font-size: 40px;
+  font-family: Courier;
+  padding: 10px;
+  float: right;
+  text-align: center;
+  font-family: "courier new";
+  font-weight: bold;
+  background-color:rgba(0, 0, 0, 0.5);
+  color: #4CBB17;
+  border-radius: 20px;
+}
+#gamepage img {
+  height: 100%;
+  width: 100%;
+}
+#gamepage #hangman {
+  top: 100px;
+  left: 5px;
+  float: left;
+  position: relative;
+  height: 450px;
+  width: 450px;
+}
+#hangman div {
+  position: absolute;
+}
+#hangmanpost {
+  height: 450px;
+  width: 450px;
+  z-index: 0
+}
+#hangmanhead {
+  height:50px;
+  width: 80px;
+  top: 113px;
+  left: 240px;
+  z-index: 1
+}
+#hangmanbody {
+  height: 100px;
+  width: 90px;
+  left: 235px;
+  top:160px;
+  z-index: 1;
+}
+#hangmanarm1 {
+  height: 75px;
+  width: 40px;
+  left: 197px;
+  top: 175px;
+  z-index: 1;
+}
+#hangmanarm2 {
+  height: 80px;
+  width: 50px;
+  left: 325px;
+  top: 175px;
+  z-index: 1;
+}
+#hangmanleg1 {
+  height: 90px;
+  width: 70px;
+  left: 190px;
+  top: 247px;
+}
+#hangmanleg2 {
+  height: 90px;
+  width: 70px;
+  left: 300px;
+  top: 247px;
+}
+#word{
+  font-family: "courier new";
+  position: absolute;
+  height: 50px;
+  width: 520px;
+  top: 165px;
+  right: 40px;
+  font-size: 35px;
+  text-align: center;
+}
+#gamepage nav {
+  background-color:rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 70px;
+  padding-left: 100px;
+  width: 750px;
+  left: 30px;
+}
+#gamepage li {
+  display: inline;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: Sabo;
+  font-size: 30px;
+}
+#gamepage ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#gamepage #alphabet a:hover {
+  border: 2px solid white;
+  color: #fff;
+}
+#gamepage a {
+  color: #4CBB17;
+}
+.hidden{
+  display: none;
+}
+#lives{
+  position: absolute;
+  top: 320px;
+  right: 100px;
+  text-align: center;
+}
+#lives h1{
+  font-size: 25px;
+}
+.modalDialog3 {
+  position: fixed;
+  font-family: Courier;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:1;
+  text-align: center;
+}
+.modalDialog3 > div {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+
+#gameovertext{
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+.returnbtn {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  -webkit-box-shadow: 5px 6px 4px #666666;
+  -moz-box-shadow: 5px 6px 4px #666666;
+  box-shadow: 5px 6px 4px #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 27px;
+  background: #4CBB17;
+  padding: 15px 30px 15px 30px;
+  border: solid #4aa81b 5px;
+  text-decoration: none;
+  position: relative;
+  left: 5px;
+  top: 50px;
+}
+.modalDialog4 {
+  position: fixed;
+  font-family: Courier;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:1;
+  pointer-events: none;
+  text-align: center;
+}
+.modalDialog4 > div {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+#wintext{
+  position: absolute;
+  top: 30px;
+}
+#wintext h1{
+  font-size: 60px;
+}
+h1 {
+  font-size: 90px;
+  font-family: Sabo;
+  margin: 0px;
+}
+.container {
+  background: url("/assets/screen.png") center top 0px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 920px;
+  height: 800px;
+  position: relative;
+  top: 0px;
+}
+.content{
+  position: relative;
+  top: 70px;
+  left: 50px;
+}
+h2 {
+  font-size: 45px;
+  font-family: Courier;
+  color: #4CBB17;
+}
+#noose {
+  position: relative;
+  float: right;
+  z-index: 2;
+  right: 100px;
+  top:-113px;
+  left: -150px;
+}
+.btn {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  -webkit-box-shadow: 5px 6px 4px #666666;
+  -moz-box-shadow: 5px 6px 4px #666666;
+  box-shadow: 5px 6px 4px #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 27px;
+  background: #4CBB17;
+  padding: 15px 30px 15px 30px;
+  border: solid #4aa81b 5px;
+  text-decoration: none;
+  position: relative;
+  left: 60px;
+  top: 50px;
+}
+.btn:hover {
+  background: #4CBB17;
+  text-decoration: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.modalDialog {
+  position: fixed;
+  font-family: Courier;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  text-align: center;
+}
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+  background: #4CBB17;
+}
+.submit {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  -webkit-box-shadow: 5px 6px 4px #666666;
+  -moz-box-shadow: 5px 6px 4px #666666;
+  box-shadow: 5px 6px 4px #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 27px;
+  background: #4CBB17;
+  padding: 10px 20px 10px 20px;
+  border: solid #4aa81b 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.password_login {
+  width: 350px;
+  height: 40px;
+}
+.username_login {
+  width: 350px;
+  height: 40px;
+}
+.modalDialog2 {
+  position: fixed;
+  font-family: Courier;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  text-align: center;
+}
+.modalDialog2:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialog2 > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+#profilepage body {
+  background: url("/assets/screen.png") center top 0px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+#profilepage h1 {
+  font-size: 60px;
+  font-family: Sabo;
+}
+#profilepage h4 {
+  font-size: 50px;
+  font-family: Sabo;
+  color: #4CBB17;
+  text-align: center;
+  position: relative;
+  bottom: 65px;
+  background-color:rgba(0, 0, 0, 0.6);
+  margin: 0;
+  top: 0px;
+}
+#profilepage #container {
+  margin: 0 auto;
+  top: 20px;
+  width: 810px;
+  position: relative;
+}
+#profilepage .leftwrapper {
+  margin: 0 auto;
+  width: 310px;
+  float: left;
+  position: relative;
+  left: 22px;
+}
+#profilepage .rightwrapper {
+  margin: 0 auto;
+  width: 400px;
+  float: right;
+  background-color:rgba(0, 0, 0, 0.4);
+  height: 492px;
+  position: relative;
+  top: -45px;
+  right: 130px;
+  border: solid 4px #4CBB17;
+  box-shadow: 10px 10px 5px #888888;
+}
+#profilepage h2 {
+  font-size: 45px;
+  font-family: Sabo;
+  color: #000;
+}
+#profilepage h3 {
+  font-size: 20px;
+  font-family: Courier;
+  text-align: center;
+}
+#profilepage .name {
+  color: #4CBB17;
+}
+#profilepage .profpic {
+  width: 200px;
+  height: 200px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  position: relative;
+  left: 55px;
+  top: -30px;
+}
+#profilepage .btn {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  -webkit-box-shadow: 5px 6px 4px #666666;
+  -moz-box-shadow: 5px 6px 4px #666666;
+  box-shadow: 5px 6px 4px #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 27px;
+  background: #4CBB17;
+  padding: 10px 20px 10px 20px;
+  border: solid #4aa81b 5px;
+  text-decoration: none;
+  position: relative;
+  top: 0;
+}
+#profilepage .btn:hover {
+  background:#4CBB17;
+  text-decoration: none;
+  cursor: pointer;
+}
+#profilepage h5 {
+  font-size: 30px;
+  font-family: Courier;
+}
+#profilepage nav {
+  background-color:rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 70px;
+  width: 768px;
+  left: 40px;
+  padding-left: 70px;
+}
+#profilepage li {
+  display: inline;
+  font-family: Sabo;
+  font-size: 40px;
+}
+#profilepage ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.avatar {
+  border-radius: 1000px;
+  width: 250px;
+  height: 250px;
+}
+.miniavatar {
+  border-radius: 1000px;
+  width: 50px;
+  height: 50px;
+}
+.scoreboard {
+  font-size: 30px;
+  text-align: center;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+@font-face {
+  font-family: sabo;
+  src: url(Sabo-Regular.otf);
+}
+html{
+	font-family: sabo;
+}
